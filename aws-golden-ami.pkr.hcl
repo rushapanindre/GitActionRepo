@@ -21,7 +21,7 @@ build {
     "source.amazon-ebs.golden-ami"
   ]
 
-  provisioner "file" {
+  provisioner "shell" {
     inline = [
       "sudo apt update -y",
       "sudo apt install nginx -y",
@@ -34,4 +34,3 @@ build {
     destination = "/var/www/html/index.html"
   }
 }
-
