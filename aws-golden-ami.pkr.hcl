@@ -30,7 +30,7 @@ build {
       #"echo '<html><body><h1>Welcome to the Golden AMI Website! powered by DIM Nov team </h1></body></html>' | sudo tee /var/www/html/index.html",
       "sudo systemctl start nginx"
     ]
-    source      = "path/to/your/local/index.html"
-    destination = "/var/www/html/index.html"
+    #source      = "path/to/your/local/index.html"
+    #destination = "/var/www/html/index.html"
   }
 }
